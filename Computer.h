@@ -6,17 +6,17 @@
 using namespace std;
 class Computer : public Player {
     private:
-        string computer_name;
-        string computer_move;
-        string* computer_choices;
+        std::string computer_name;
+        std::string computer_move;
+        std::string* computer_choices;
     public:
-        Computer(string computer_name);
+        Computer(std::string computer_name);
         Computer();
         ~Computer();
-        string computer_selection();
-        void Player_Input(string computer_input);
-        string Return_Player_Input();
-        string Return_Player_Name();
-        string* Return_Player_Input_Address();
+        std::string computer_selection();
+        void Player_Input(std::string computer_input);
+        std::string Return_Player_Input();
+        std::string Return_Player_Name();
+        std::string* Return_Player_Input_Address();
 };
 #endif
