@@ -9,7 +9,12 @@
 #include "Person.h"
 #include "Computer.h"
 using namespace std;
-
+class Referee {
+    private:
+        string name;
+    public:
+        Referee();
+}
 while ((user_score && computer_score) <= score_to_win){
         cout <<"\n\n The scores are: "<<user_score<<" and "<<computer_score<<"\n";
         if (computer_score == score_to_win) {cout <<"\n\n The computer wins! \n\n"; break;}
