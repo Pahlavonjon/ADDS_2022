@@ -3,19 +3,18 @@
 #include "Player.h"
 #include <iostream>
 #include <string>
-using namespace std;
 class Person : public Player {
     private:
-        string person_name;
-        string person_move;
+        std::string person_name;
+        std::string person_move;
     public:
-        Person(string person_name);
+        Person(std::string person_name);
         Person();
         ~Person();
-        string Return_Player_Name();
-        void Player_Input(string player_input);
-        string Return_Player_Input();
-        string computer_selection();
-        string* Return_Player_Input_Address();
+        std::string Return_Player_Name();
+        void Player_Input(std::string player_input);
+        std::string Return_Player_Input();
+        std::string computer_selection();
+        std::string* Return_Player_Input_Address();
 };
 #endif

@@ -19,7 +19,7 @@ Computer::Computer(string computer_name){
     computer_choices[2] = "scissors";
 }
 string Computer::computer_selection(){
-    srand(time(0));
+    // srand(time(0));
     this->computer_move = computer_choices[rand()%3];
     return this->computer_move;
 }
