@@ -10,7 +10,6 @@ int main(void){
     Referee Gameref;
     bool run_main = true;
     while (run_main == true){
-        Person.makeMove();
         cout << Gameref.refGame(Person,Bot);
     }
     
