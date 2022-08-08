@@ -3,6 +3,7 @@
 #include "Player.h"
 #include <iostream>
 #include <string>
+using namespace std;
 class Computer : public Player {
     private:
         std::string computer_name;

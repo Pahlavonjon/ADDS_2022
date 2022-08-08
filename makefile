@@ -8,8 +8,8 @@
 # 	g++ vector.cpp -o vector
 # 	./vector
 compile:
-	g++ -pthread main.cpp Person.cpp Computer.cpp -o rps
-	./rps
+	g++ -pthread main.cpp Person.cpp Computer.cpp -o rockpaperscissors
+	./rockpaperscissors
 # 	# TEST MAKEFILE
 
 # mycode: main.cpp sum.o 

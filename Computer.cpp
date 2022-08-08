@@ -10,6 +10,7 @@ Computer::Computer(){
     computer_choices[0] = "rock"; 
     computer_choices[1] = "paper"; 
     computer_choices[2] = "scissors"; 
+    computer_move = "";
 }
 Computer::Computer(string computer_name){
     this->computer_name = computer_name;
@@ -17,6 +18,7 @@ Computer::Computer(string computer_name){
     computer_choices[0] = "rock"; 
     computer_choices[1] = "paper"; 
     computer_choices[2] = "scissors";
+    computer_move = "";
 }
 string Computer::computer_selection(){
     // srand(time(0));

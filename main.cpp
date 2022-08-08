@@ -30,8 +30,8 @@ int main(void){
     int score_to_win = 3;
     bool next_pick = true;
     thread Randomiser___(Randomiser,The_Computer->Return_Player_Input_Address(),&next_pick);
-    Randomiser___.detach();
-    string User_input;
+    Randomiser___.detach(); 
+    string User_input; 
     while ((user_score && computer_score) <= score_to_win){
         cout <<"\n\n The scores are: "<<user_score<<" and "<<computer_score<<"\n";
         if (computer_score == score_to_win) {cout <<"\n\n The computer wins! \n\n"; break;}
