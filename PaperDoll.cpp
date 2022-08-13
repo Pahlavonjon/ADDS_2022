@@ -3,7 +3,7 @@
 #include "PaperDoll.h"
 #include "Player.h"
 using namespace std;
-PaperDoll::PaperDoll(){this->move_order = 0;}
+PaperDoll::PaperDoll(){this->move_order = 0; this->PaperDoll_name = "PaperDoll";}
     char PaperDoll::return_move(){return PaperDoll_move;}
     void PaperDoll::makeMove(){
         switch (this->move_order){

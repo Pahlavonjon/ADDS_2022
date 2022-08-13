@@ -7,6 +7,7 @@ class Human : public Player {
     private:
         std::string name;
         char move;
+        std::string Human_name;
     public:
         Human();
         char return_move();

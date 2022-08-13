@@ -6,6 +6,7 @@
 class Toolbox : public Player {
     private:
         char Toolbox_move;
+        std::string Toolbox_name;
     public:
         Toolbox();
         char return_move();

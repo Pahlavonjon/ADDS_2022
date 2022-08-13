@@ -3,7 +3,7 @@
 #include <iostream>
 #include <string>
 using namespace std;
-Human::Human(){this->name = "human";}
+Human::Human(){this->name = "human"; this->Human_name = "Human";}
 void Human::makeMove(){cout << "\nEnter move: "; cin >> move;}
 char Human::return_move(){return this->move;}
 

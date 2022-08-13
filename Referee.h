@@ -8,6 +8,6 @@ class Referee {
         char move;
     public:
         Referee();
-        char refGame(Player player1, Player player2);
+        char refGame(Player* player1, Player* player2);
 };
 #endif

@@ -7,6 +7,7 @@ class Crescendo : public Player {
     private:
         char Crescendo_move;
         int move_order;
+        std::string Crescendo_name;
     public:
         Crescendo();
         char return_move();

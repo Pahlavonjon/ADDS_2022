@@ -3,7 +3,7 @@
 #include "Crescendo.h"
 #include "Player.h"
 using namespace std;
-Crescendo::Crescendo(){this->move_order = 0;}
+Crescendo::Crescendo(){this->move_order = 0; this->Crescendo_name = "Crescendo";}
     char Crescendo::return_move(){return Crescendo_move;}
     void Crescendo::makeMove(){
         switch (this->move_order){

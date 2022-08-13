@@ -6,6 +6,7 @@
 class Avalanche : public Player {
     private:
         char Avalanche_move;
+        std::string Avalanche_name;
     public:
         Avalanche();
         char return_move();

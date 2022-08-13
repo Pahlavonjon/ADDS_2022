@@ -7,6 +7,7 @@ class Firstfull0Dollars : public Player {
     private:
         char Firstfull0Dollars_move;
         int move_order;
+        std::string Firstfull0Dollars_name;
     public:
         Firstfull0Dollars();
         char return_move();

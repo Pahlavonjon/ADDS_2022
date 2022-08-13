@@ -10,6 +10,7 @@ class RandomComputer : public Player {
     private:
         char RandomComputer_move;
         char* possible_moves;
+        std::string RandomComputer_name;
     public:
         RandomComputer();
         ~RandomComputer();

@@ -6,6 +6,7 @@
 class Bureaucrat : public Player {
     private:
         char Bureaucrat_move;
+        std::string Bureaucrat_name;
     public:
         Bureaucrat();
         char return_move();

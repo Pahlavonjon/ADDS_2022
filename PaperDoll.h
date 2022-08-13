@@ -7,6 +7,7 @@ class PaperDoll : public Player {
     private:
         char PaperDoll_move;
         int move_order;
+        std::string PaperDoll_name;
     public:
         PaperDoll();
         char return_move();

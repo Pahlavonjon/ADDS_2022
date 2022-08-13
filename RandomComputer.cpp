@@ -11,6 +11,7 @@ using namespace std;
         possible_moves[0] = 'R';
         possible_moves[1] = 'P';
         possible_moves[2] = 'S';
+        this->RandomComputer_name = "RandomComputer";
     }
     RandomComputer::~RandomComputer(){
         delete[] possible_moves;

@@ -4,7 +4,11 @@
 #include <string>
 class Player {
     public:
-        void virtual makeMove() = 0;
-        char virtual return_move() = 0;
+        Player();
+        void makeMove();
+        char return_move();
+        std::string Return_player_name();
+        // void virtual makeMove() = 0;
+        // char virtual return_move() = 0;
 };
 #endif
