@@ -17,8 +17,6 @@ using namespace std;
     }
     Player* Tournament::run(Player* competitors){
         Referee Ref;
-        int even = 0;
-        int odd = 1;
 
         //int *Semi_Finalists_position_in_array = new int[4];
         int main_array_incrementor = 0;

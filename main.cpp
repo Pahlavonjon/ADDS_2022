@@ -33,6 +33,7 @@ int main(void){
 
 
 
-    delete [] Players_Array, The_Referee;
+    delete [] Players_Array;
+    delete The_Referee;
     return 0;
 }
