@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string>
-#include "Fistfull0Dollars.h"
+#include "FistfullODollars.h"
 #include "Player.h"
 using namespace std;
 Firstfull0Dollars::Firstfull0Dollars(){this->move_order = 0; this->Firstfull0Dollars_name = "Firstfull0Dollars";}

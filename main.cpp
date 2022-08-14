@@ -7,7 +7,7 @@
 #include "Bureaucrat.h"
 #include "Computer.h"
 #include "Crescendo.h"
-#include "Fistfull0Dollars.h"
+#include "FistfullODollars.h"
 #include "Player.h"
 #include "Toolbox.h"
 #include "Tournament.h"
