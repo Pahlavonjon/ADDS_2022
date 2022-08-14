@@ -7,7 +7,7 @@
 #include "Bureaucrat.h"
 #include "Computer.h"
 #include "Crescendo.h"
-#include "Firstfull0Dollars.h"
+#include "Fistfull0Dollars.h"
 #include "Player.h"
 #include "Toolbox.h"
 #include "Tournament.h"
@@ -16,15 +16,15 @@
 using namespace std;
 int main(void){
     bool run_main = true;
-    Player* Players_Array = new Player[8];
-    *(Players_Array+0) = Avalanche();
-    *(Players_Array+1) = Bureaucrat();
-    *(Players_Array+2) = Crescendo();
-    *(Players_Array+3) = Firstfull0Dollars();
-    *(Players_Array+4) = RandomComputer();
-    *(Players_Array+5) = PaperDoll();
-    *(Players_Array+6) = Toolbox();
-    *(Players_Array+7) = Computer();
+    Player** Players_Array = new Player*[8];
+    *(Players_Array+0) = new Avalanche();
+    *(Players_Array+1) = new Bureaucrat();
+    *(Players_Array+2) = new Crescendo();
+    *(Players_Array+3) = new Firstfull0Dollars();
+    *(Players_Array+4) = new RandomComputer();
+    *(Players_Array+5) = new PaperDoll();
+    *(Players_Array+6) = new Toolbox();
+    *(Players_Array+7) = new Computer();
     Referee* The_Referee = new Referee;
     Tournament* The_Tournament = new Tournament;
     Player* Winner = new Player();
