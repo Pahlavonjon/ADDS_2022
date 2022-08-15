@@ -49,7 +49,7 @@ using namespace std;
         Semi_Finalists_array_position = 0;
         array<Player*,2> Finalists;
         int Finalist_position_in_array = 0;
-        array<int,4> semi_scores;
+        array<int,4> semi_scores {{0,0,0,0}};
 
         for (int j = 0; j < 2; j++){
             for (int k = 0; k < 5; k++){
@@ -74,15 +74,15 @@ using namespace std;
         // The Finals
         Finalist_position_in_array = 0;
         Player* Winner;
-        array<int, 2> Final_scores;
+        array<int, 2> Final_scores {{0,0}};
 
             for (int k = 0; k < 5; k++){
                 char result = Ref.refGame((Finalists.at(Finalist_position_in_array)),(Finalists.at(Finalist_position_in_array+1)));
                 if (result == 'W'){
-                    Final_scores.at(Finalist_position_in_array)++;
+                    Final_scores.at(Finalist_position_in_array) += 1;
                 }
                 else if (result == 'L'){
-                    Final_scores.at(Finalist_position_in_array+1)++;
+                    Final_scores.at(Finalist_position_in_array+1) += 1;
                 }
             }
             if (Final_scores.at(Finalist_position_in_array) > semi_scores.at(Finalist_position_in_array+1)){

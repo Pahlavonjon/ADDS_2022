@@ -7,7 +7,7 @@
 #include <array>
 class Tournament {
     private:
-        std::array<int,8> Player_Scores;
+        std::array<int,8> Player_Scores {{0,0,0,0,0,0,0,0}};
     public:
         Tournament();
         ~Tournament();
