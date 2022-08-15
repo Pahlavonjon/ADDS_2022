@@ -21,3 +21,6 @@ PaperDoll::PaperDoll(){this->move_order = 0; this->PaperDoll_name = "PaperDoll";
                 break;        
         }   
     }
+    std::string PaperDoll::Return_player_name(){
+        return PaperDoll_name;
+    }

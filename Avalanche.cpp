@@ -6,3 +6,7 @@ using namespace std;
     Avalanche::Avalanche(){this->Avalanche_move = 'R'; this->Avalanche_name = "Avalanche";}
     char Avalanche::return_move(){return Avalanche_move;}
     void Avalanche::makeMove(){this->Avalanche_move = 'R';}
+    string Avalanche::Return_player_name(){
+        return Avalanche_name;
+    }
+    

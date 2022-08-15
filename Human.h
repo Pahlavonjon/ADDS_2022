@@ -12,5 +12,7 @@ class Human : public Player {
         Human();
         char return_move();
         void makeMove();
+        std::string Return_player_name();
+
 };
 #endif

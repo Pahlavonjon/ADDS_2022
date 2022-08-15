@@ -1,5 +1,5 @@
-#ifndef Firstfull0Dollars_H
-#define Firstfull0Dollars_H
+#ifndef FirstfullODollars_H
+#define FirstfullODollars_H
 #include "Player.h"
 #include <iostream>
 #include <string>
@@ -12,5 +12,7 @@ class Firstfull0Dollars : public Player {
         Firstfull0Dollars();
         char return_move();
         void makeMove();
+        std::string Return_player_name();
+
 };
 #endif

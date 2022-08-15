@@ -11,5 +11,7 @@ class Toolbox : public Player {
         Toolbox();
         char return_move();
         void makeMove();
+        std::string Return_player_name();
+
 };
 #endif

@@ -16,5 +16,7 @@ class RandomComputer : public Player {
         ~RandomComputer();
         void makeMove();
         char return_move();
+        std::string Return_player_name();
+
 };
 #endif

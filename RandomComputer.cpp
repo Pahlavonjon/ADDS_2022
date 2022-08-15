@@ -22,3 +22,6 @@ using namespace std;
     char RandomComputer::return_move(){
         return RandomComputer_move;
     }
+    std::string RandomComputer::Return_player_name(){
+        return RandomComputer_name;
+    }

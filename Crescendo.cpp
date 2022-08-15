@@ -21,3 +21,6 @@ Crescendo::Crescendo(){this->move_order = 0; this->Crescendo_name = "Crescendo";
                 break;        
         }   
     }
+    std::string Crescendo::Return_player_name(){
+        return Crescendo_name;
+    }

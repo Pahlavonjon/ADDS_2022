@@ -4,13 +4,14 @@
 #include "Referee.h"
 #include <iostream>
 #include <string>
+#include <array>
 class Tournament {
     private:
-        int* Player_Scores;
+        std::array<int,8> Player_Scores;
     public:
         Tournament();
         ~Tournament();
-        void make_moves_all(Player* competitors,int number_players_left);
-        Player* run(Player* competitors);
+        //void make_moves_all(Player* competitors,int number_players_left);
+        Player* run(std::array<Player *, 8>  competitors);
 };
 #endif

@@ -21,3 +21,6 @@ Firstfull0Dollars::Firstfull0Dollars(){this->move_order = 0; this->Firstfull0Dol
                 break;        
         }   
     }
+    std::string Firstfull0Dollars::Return_player_name(){
+        return Firstfull0Dollars_name;
+    }
