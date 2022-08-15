@@ -8,6 +8,7 @@ class FistfullODollars : public Player {
         char FistfullODollars_move;
         int move_order;
         std::string FistfullODollars_name;
+        int move_number;
     public:
         FistfullODollars();
         char return_move();

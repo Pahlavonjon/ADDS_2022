@@ -17,25 +17,32 @@
 #include "PaperDoll.h"
 using namespace std;
 int main(void){
-    // bool run_main = true;
-   // Player** Players_Array = new Player[8];
+   // Avalanche Bureaucrat Bureaucrat Toolbox Toolbox Crescendo Crescendo FistfullODollars
     array<Player* , 8> Players_array;
+
     Players_array.at(0) = new Avalanche();
     Players_array.at(1) = new Bureaucrat();
-    Players_array.at(2) = new Crescendo();
-    Players_array.at(3) = new FistfullODollars();
-    Players_array.at(4) = new RandomComputer();
-    Players_array.at(5)= new PaperDoll();
-    Players_array.at(6) = new Toolbox();
-    Players_array.at(7) = new Computer();
-  //  Referee* The_Referee = new Referee;
+    Players_array.at(2) = new Bureaucrat();
+    Players_array.at(3) = new Toolbox();
+    Players_array.at(4) = new Toolbox();
+    Players_array.at(5)= new Crescendo();
+    Players_array.at(6) = new Crescendo();
+    Players_array.at(7) = new FistfullODollars();
+
+    // Players_array.at(0) = new Avalanche();
+    // Players_array.at(1) = new Bureaucrat();
+    // Players_array.at(2) = new Crescendo();
+    // Players_array.at(3) = new FistfullODollars();
+    // Players_array.at(4) = new RandomComputer();
+    // Players_array.at(5)= new PaperDoll();
+    // Players_array.at(6) = new Toolbox();
+    // Players_array.at(7) = new Computer();
+
+
+
     Tournament* The_Tournament = new Tournament;
     Player* Winner;
     Winner = The_Tournament->run(Players_array);
     cout << "\n\n " << Winner->Return_player_name() << "\n\n";
-
-
-
-   // delete [] Players_array;
     return 0;
 }

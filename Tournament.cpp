@@ -38,6 +38,9 @@ using namespace std;
         if (Player_Scores.at(main_array_incrementor) > Player_Scores.at(main_array_incrementor+1)){
             Semi_Finalists.at(Semi_Finalists_array_position) = competitors.at(main_array_incrementor);
         }
+        else if (Player_Scores.at(main_array_incrementor) == Player_Scores.at(main_array_incrementor+1)){
+            Semi_Finalists.at(Semi_Finalists_array_position) = competitors.at(main_array_incrementor);
+        }
         else {
             Semi_Finalists.at(Semi_Finalists_array_position) = competitors.at(main_array_incrementor+1);
         }
@@ -64,6 +67,9 @@ using namespace std;
             if (semi_scores.at(Semi_Finalists_array_position) > semi_scores.at(Semi_Finalists_array_position+1)){
                 Finalists.at(Finalist_position_in_array) = Semi_Finalists.at(Semi_Finalists_array_position);
             }
+            else if (semi_scores.at(Semi_Finalists_array_position) == semi_scores.at(Semi_Finalists_array_position+1)){
+                Finalists.at(Finalist_position_in_array) = Semi_Finalists.at(Semi_Finalists_array_position);
+            }
             else {
                 Finalists.at(Finalist_position_in_array) = Semi_Finalists.at(Semi_Finalists_array_position+1);
             }
@@ -86,6 +92,9 @@ using namespace std;
                 }
             }
             if (Final_scores.at(Finalist_position_in_array) > semi_scores.at(Finalist_position_in_array+1)){
+                Winner = Finalists.at(Finalist_position_in_array);
+            }
+            else if (Final_scores.at(Finalist_position_in_array) == semi_scores.at(Finalist_position_in_array+1)){
                 Winner = Finalists.at(Finalist_position_in_array);
             }
             else {
