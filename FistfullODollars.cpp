@@ -3,24 +3,24 @@
 #include "FistfullODollars.h"
 #include "Player.h"
 using namespace std;
-FirstfullODollars::FirstfullODollars(){this->move_order = 0; this->FirstfullODollars_name = "FirstfullODollars";}
-    char FirstfullODollars::return_move(){return FirstfullODollars_move;}
-    void FirstfullODollars::makeMove(){
+FistfullODollars::FistfullODollars(){this->move_order = 0; this->FistfullODollars_name = "FistfullODollars";}
+    char FistfullODollars::return_move(){return FistfullODollars_move;}
+    void FistfullODollars::makeMove(){
         switch (this->move_order){
             case 0:
-                this->FirstfullODollars_move = 'R';
+                this->FistfullODollars_move = 'R';
                 this->move_order++;
                 break;
             case 1:
-                this->FirstfullODollars_move = 'P';
+                this->FistfullODollars_move = 'P';
                 this->move_order++;
                 break;
             case 2:
-                this->FirstfullODollars_move = 'P';
+                this->FistfullODollars_move = 'P';
                 this->move_order = 0;
                 break;        
         }   
     }
-    std::string FirstfullODollars::Return_player_name(){
-        return FirstfullODollars_name;
+    std::string FistfullODollars::Return_player_name(){
+        return FistfullODollars_name;
     }

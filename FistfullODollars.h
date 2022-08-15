@@ -1,15 +1,15 @@
-#ifndef FirstfullODollars_H
-#define FirstfullODollars_H
+#ifndef FistfullODollars_H
+#define FistfullODollars_H
 #include "Player.h"
 #include <iostream>
 #include <string>
-class FirstfullODollars : public Player {
+class FistfullODollars : public Player {
     private:
-        char FirstfullODollars_move;
+        char FistfullODollars_move;
         int move_order;
-        std::string FirstfullODollars_name;
+        std::string FistfullODollars_name;
     public:
-        FirstfullODollars();
+        FistfullODollars();
         char return_move();
         void makeMove();
         std::string Return_player_name();
