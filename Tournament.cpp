@@ -91,10 +91,10 @@ using namespace std;
                     Final_scores.at(Finalist_position_in_array+1) += 1;
                 }
             }
-            if (Final_scores.at(Finalist_position_in_array) > semi_scores.at(Finalist_position_in_array+1)){
+            if (Final_scores.at(Finalist_position_in_array) > Final_scores.at(Finalist_position_in_array+1)){
                 Winner = Finalists.at(Finalist_position_in_array);
             }
-            else if (Final_scores.at(Finalist_position_in_array) == semi_scores.at(Finalist_position_in_array+1)){
+            else if (Final_scores.at(Finalist_position_in_array) == Final_scores.at(Finalist_position_in_array+1)){
                 Winner = Finalists.at(Finalist_position_in_array);
             }
             else {
