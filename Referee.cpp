@@ -19,6 +19,10 @@ char Referee::refGame(Player* player1, Player* player2){
     if (player1->return_move() == 'P' && player2->return_move() == 'R'){return 'W';}
     else if (player1->return_move() == 'S' && player2->return_move() == 'R'){return 'L';}
     else if (player1->return_move() == 'R' && player2->return_move() == 'R'){return 'T';}
+
+    else if (player1->return_move() == 'R' && player2->return_move() == 'P'){return 'L';}
+    else if (player1->return_move() == 'R' && player2->return_move() == 'S'){return 'W';}
+    else if (player1->return_move() == 'R' && player2->return_move() == 'R'){return 'T';}
     return 'L';
 }
 
