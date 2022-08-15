@@ -3,13 +3,13 @@
 #include "Player.h"
 #include <iostream>
 #include <string>
-class Firstfull0Dollars : public Player {
+class FirstfullODollars : public Player {
     private:
-        char Firstfull0Dollars_move;
+        char FirstfullODollars_move;
         int move_order;
-        std::string Firstfull0Dollars_name;
+        std::string FirstfullODollars_name;
     public:
-        Firstfull0Dollars();
+        FirstfullODollars();
         char return_move();
         void makeMove();
         std::string Return_player_name();

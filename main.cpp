@@ -23,7 +23,7 @@ int main(void){
     Players_array.at(0) = new Avalanche();
     Players_array.at(1) = new Bureaucrat();
     Players_array.at(2) = new Crescendo();
-    Players_array.at(3) = new Firstfull0Dollars();
+    Players_array.at(3) = new FirstfullODollars();
     Players_array.at(4) = new RandomComputer();
     Players_array.at(5)= new PaperDoll();
     Players_array.at(6) = new Toolbox();
