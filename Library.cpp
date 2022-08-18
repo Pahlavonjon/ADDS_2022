@@ -12,11 +12,12 @@
         array_index++;
     } // add a Document to the Library
     bool Library::hasDocument(Document* Where_this_Document){
-        for (int k = 0; k < Libary_capacity; k++){
+        for (int k = 0; k < array_index; k++){
             if (The_Documents.at(k)->getDocumentID() == Where_this_Document->getDocumentID()){
                 std::cout <<"\n"<<Where_this_Document->getDocumentID() << " is in the Library ... true ";
                 return true;
             }
         }
+        std::cout << "\n "<<Where_this_Document->getDocumentID() << " is NOT in the Library ... false ";
         return false;
     } // check if a Document is in the Library
