@@ -1,9 +1,10 @@
 #ifndef Library_H
 #define Library_H
 #include "Document.h"
+#include <array>
 class Library {
     private:
-        Document** The_Documents;
+        std::array<Document*,5> The_Documents;
         int Libary_capacity;
         int array_index;
     public:
