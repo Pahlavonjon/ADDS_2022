@@ -1,35 +1,28 @@
 #include <iostream>
-#include <string> // git rm -rf .
-#include <algorithm>
-#include <bits/stdc++.h>
+#include <string>
 #include "Reverse.h"
 #include "Truckloads.h"
+#include "EfficientTruckloads.h"
 using namespace std;
-int recursion_1(long long int Nummer){
-    Nummer++;
-    if (Nummer >= 100){
-        return Nummer;
-    }
-    return recursion_1(Nummer);
-}
-string recursion_2(string Heisse,int first, int last){
-    if (first >= Heisse.length()-1){
-        return Heisse;
-    }
-    swap(Heisse.at(first),Heisse.at(last));
-    return recursion_2(Heisse,first+1,last -1);
-
-   // return recursion_2(Heisse.substr(1,Heisse.length()-1));
-}
 int main(void){
-    //cout << "\n\n The output is: " << recursion_1(Nummer) << "\n\n";
-    //cout << "\n\n "<<recursion_2("Pahlavonjon",0,10)<<"\n\n";
-
-    // Reverse Tool;
-    // cout << "\n\n " <<Tool.reverseString("Pahlavonjon")<<"\n\n";
-    // cout << "\n\n " <<Tool.reverseString("1234")<<"\n\n";
-    // cout << "\n\n " <<Tool.reverseDigit(123,3)<<"\n\n";
-
+    Reverse Tool;
     Truckloads Scania;
+    EfficientTruckloads Volvo;
+
+    int i;
+    string s;
+    int numCrates;
+    int loadSize;
+
+    
+
+    cout << i << " " << s << " "  << Scania.numTrucks(numCrates,loadSize) << " " << Volvo.numTrucks(numCrates,loadSize)<<"\n";
+
+    cout << "\n\n\n";
+
+    cout << "\n\n " <<Tool.reverseString("Pahlavonjon")<<"\n\n";
+    cout << "\n\n " <<Tool.reverseDigit(0)<<"\n\n";
+
+    Volvo.number_trucks(2,2);
     cout << "\n\n Number of trucks needed is "<<Scania.numTrucks(12,2)<<"\n\n";
 }

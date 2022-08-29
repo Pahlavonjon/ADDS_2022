@@ -1,7 +1,8 @@
 #include <string>
 #include "Reverse.h"
+#include <cmath>
 using namespace std;
-Reverse::Reverse(){}
+Reverse::Reverse(){this->reversed_number = 0;}
 string Reverse::reverseString(string letters){
     if (letters.length() <= 0){
         return "ERROR";
@@ -9,18 +10,18 @@ string Reverse::reverseString(string letters){
     if (letters.length() <= 1){
         return letters;
     }
-    string reverse_chunk = letters.substr(1,letters.length()-1);
-    string reverse_letter = letters.substr(0,((letters.length()-1)-(letters.length()-2)));
-    return (reverseString(reverse_chunk)+reverse_letter);
+    string smaller_string = letters.substr(1,letters.length()-1);
+    string head = letters.substr(0,((letters.length()-1)-(letters.length()-2)));
+    return (reverseString(smaller_string)+head);
 }
-int Reverse::reverseDigit(int value,int decimal_point){
+int Reverse::reverseDigit(int value){
     if (value < 0){
         return -1;
     }
-    if (value%10 == 0){
-        return value;
+    else if (value > 0){
+        int smallest_value = value%10;
+        reversed_number = (reversed_number*10)+smallest_value;
+        reverseDigit(value/10);
     }
-    int smallest_value = (((value%10)-(value%1))/1)*(((value%10)-(value%1))/1);
-    int smaller_value = (value - smallest_value)/10;
-    return reverseDigit(smaller_value,decimal_point-1)+smaller_value*(10^(decimal_point));
+    return reversed_number;
 }
