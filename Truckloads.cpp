@@ -6,7 +6,7 @@ int Truckloads::numTrucks(int numCrates, int loadSize){
     if (numCrates <= loadSize){
         return 1;
     }
-    else if (numCrates < 1){
+    else if (numCrates < 1 && numCrates ){
         return 0;
     }
     int first_half;
