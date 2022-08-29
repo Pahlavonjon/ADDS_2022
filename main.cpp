@@ -14,15 +14,13 @@ int main(void){
     int numCrates;
     int loadSize;
 
-    
-
-    cout << i << " " << s << " "  << Scania.numTrucks(numCrates,loadSize) << " " << Volvo.numTrucks(numCrates,loadSize)<<"\n";
-
-    cout << "\n\n\n";
-
-    cout << "\n\n " <<Tool.reverseString("Pahlavonjon")<<"\n\n";
-    cout << "\n\n " <<Tool.reverseDigit(0)<<"\n\n";
-
-    Volvo.number_trucks(2,2);
-    cout << "\n\n Number of trucks needed is "<<Scania.numTrucks(12,2)<<"\n\n";
+    cin >> i >> s >> numCrates >> loadSize;
+    if (cin.fail()){
+        cout << "ERROR";
+    }
+    else {
+        i = Tool.reverseDigit(i);
+        s = Tool.reverseString(s);
+        cout << i << " " << s << " "  << Scania.numTrucks(numCrates,loadSize) << " " << Volvo.numTrucks(numCrates,loadSize)<<"\n";
+    }
 }

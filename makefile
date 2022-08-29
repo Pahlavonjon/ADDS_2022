@@ -1,6 +1,6 @@
 compile:
-	g++ main.cpp Truckloads.cpp Reverse.cpp -o trucks
+	g++ main.cpp Truckloads.cpp Reverse.cpp EfficientTruckloads.cpp -o trucks
 	./trucks
-question1:
-	g++ main.cpp Reverse.cpp -o prac4
+question3:
+	g++ main.cpp Truckloads.cpp EfficientTruckloads.cpp -o prac4
 	./prac4
