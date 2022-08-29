@@ -1,13 +1,13 @@
 #include "Truckloads.h"
 #include <iostream>
 using namespace std;
-Truckloads::Truckloads(){this->number_trucks = 0;}
+Truckloads::Truckloads(){number_trucks = 0;}
 int Truckloads::numTrucks(int numCrates, int loadSize){
-    if (numCrates < 1){
-        return 0;
-    }
     if (numCrates <= loadSize){
         return 1;
+    }
+    else if (numCrates < 1){
+        return 0;
     }
     int first_half;
     int second_half;
