@@ -1,12 +1,13 @@
 #include "EfficientTruckloads.h"
 EfficientTruckloads::EfficientTruckloads(){}
 int EfficientTruckloads::numTrucks(int numCrates, int loadSize){
-    if (numCrates <= loadSize){
-        return 1;
-    }
     if (numCrates < 1){
         return 0;
     }
+    if (numCrates <= loadSize){
+        return 1;
+    }
+    
     
     int first_half;
     int second_half;
