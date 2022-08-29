@@ -4,6 +4,13 @@
 #include "EfficientTruckloads.h"
 using namespace std;
 int main(){
-    Volvo.numTrucks(2,2);
-    cout << "\n\n Number of trucks needed is "<<Scania.numTrucks(12,2)<<"\n\n";
+    Truckloads Scania;
+    EfficientTruckloads Volvo;
+    int numCrates;
+    int loadSize;
+    cin >> numCrates >> loadSize;
+    cout << "\n\n Number of trucks needed is " << Scania.numTrucks(numCrates,loadSize)<<"\n\n";
+    cout << " Number of trucks needed is " << Volvo.numTrucks(numCrates,loadSize)<<"\n\n";
+    cout <<"\n";
+    return 0;
 }
