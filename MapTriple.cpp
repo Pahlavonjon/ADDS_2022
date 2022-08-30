@@ -1,7 +1,7 @@
 #include "MapTriple.h"
 #include <vector>
 using namespace std;
-MapTriple::MapTriple(){Current_element = 0;}
+MapTriple::MapTriple(){this->Current_element = 0;}
 vector<int> MapTriple::map(vector<int> The_Vector){
     Vector_Size = The_Vector.size();
     if (Current_element => Vector_Size){
@@ -10,4 +10,7 @@ vector<int> MapTriple::map(vector<int> The_Vector){
     The_Vector.at(Current_element) *= 3; 
     this->Current_element++;
     return map(The_Vector);
+}
+int MapTriple::f(int x){
+    return 3*x;
 }
