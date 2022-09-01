@@ -4,11 +4,11 @@
 #include <vector>
 class FilterNonPositive : private FilterGeneric {
     private:
-        unsigned int Vector_Size;
-        unsigned int Current_element;
+        int Vector_Size;
+        int Current_element;
         bool g(int x);
     public:
         FilterNonPositive();
-        vector<int> filter(vector<int> The_Vector);
+        std::vector<int> filter(std::vector<int> The_Vector);
 };
 #endif

@@ -5,6 +5,6 @@ class FilterGeneric {
     private:
         virtual bool g(int x) = 0;
     public:
-        virtual vector<int> filter(vector<int> The_Vector) = 0;
+        virtual std::vector<int> filter(std::vector<int> The_Vector) = 0;
 };
 #endif
