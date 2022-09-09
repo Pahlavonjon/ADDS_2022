@@ -3,11 +3,14 @@
 using namespace std;
 FilterForTwoDigitPositive::FilterForTwoDigitPositive(){this->Current_element = 0;}
 vector<int> FilterForTwoDigitPositive::filter(vector<int> The_Vector){
-    if (this->Current_element >= The_Vector.size()){
+    int vector_size = The_Vector.size();
+    if (this->Current_element >= vector_size){
         return The_Vector;
     }
-    if (g(The_Vector.at(Current_element) == false)){
-        The_Vector.erase(Current_element,Current_element);
+    if (g(The_Vector.at(Current_element)) == false){
+        The_Vector.erase(The_Vector.begin()+Current_element); // this element is being removed! dont forget about the index change!
+    }
+    else {
         this->Current_element++;
     }
     return filter(The_Vector);

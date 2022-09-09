@@ -1,6 +1,6 @@
 #ifndef FilterNonPositive_H
 #define FilterNonPositive_H
-#include <FilterGeneric.h>
+#include "FilterGeneric.h"
 #include <vector>
 class FilterNonPositive : private FilterGeneric {
     private:
